@@ -1,4 +1,4 @@
-#include "seven_segment.h"
+#include "MAX7219.h"
 
 
 void sendbyte(unsigned char address, unsigned char data) {
@@ -58,4 +58,5 @@ void Init(void) {
    for (i = 1; i <= 8; i++) {
     	write7219(i, 0x00);
    }
+
 }
