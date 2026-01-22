@@ -1,6 +1,5 @@
-#ifndef SEVEN_SEGMENT_H
-
-#define SEVEN_SEGMENT_H
+#ifndef MAX7219_H
+#define MAX7219_H
 
 #include "8051.h"
 
@@ -21,5 +20,6 @@ void sendbyte(unsigned char address, unsigned char data);
 void write7219(unsigned char address, unsigned char data);
 void write_multi_unit(unsigned char unit, unsigned char address, unsigned char data);
 void Init(void);
+
 
 #endif
